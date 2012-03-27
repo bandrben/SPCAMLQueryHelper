@@ -1,0 +1,54 @@
+SharePoint CAML Query Helper for 2007 and 2010
+
+Available at Codeplex (for now):
+
+http://spcamlqueryhelper.codeplex.com/
+
+Project Description
+
+Use this program to help build and test SharePoint CAML Queries (Collaborative Application Markup Language). Compatible with WSS 3.0, MOSS 2007, Foundation 2010, and SharePoint 2010. Very similar to U2U CAML Query Builder for SharePoint 2003 and SharePoint 2007. This app uses the SharePoint Object Model to connect to a site using a URL (instead of web services). Gets all webs in a site, all lists in a web, and all fields/columns in a list. Can export field information to CSV. Also provides interface for building XML CAML Queries, with tools to make it easier managing field names (using drag-drop and copy-to-clipboard commands). Specify a query, the viewfields, and a row limit (0 to ignore) and run your query. Results are output to a sortable grid and the data can be exported to CSV. The grid shows the fields that are selected in the viewfields. Newtonsoft JSON.NET API is used to dump the content of listitems. App.config file can used to specify default Site URL to connect when opening file.
+
+Features
+
+-Uses SharePoint Object Model, not web services.
+-Compatible with SharePoint 2007 and 2010.
+-Supports export to CSV for Field info and Query results.
+-Copy-to-clipboard and drag-drop columns to Query and ViewFields textboxes (for easier query building).
+-Zero-configuration, just click and run (providing a Site Url is only config variable, so maybe 0.1 configuration).
+-About/Help window has cheat-sheet for CAML query syntax with examples.
+-Open a Lists Views and examine the View Schema CAML.
+-Export Query and View Fields as C# code (ready for pasting into your application to use).
+
+Requirements
+
+-.NET Framework 3.5
+-Run on server with SOM installed
+-Uses current user permissions (impersonation), must have access to SharePoint Site URL
+
+ ######                       ######  
+ #     #   ##   #    # #####  #     # 
+ #     #  #  #  ##   # #    # #     # 
+ ######  #    # # #  # #    # ######  
+ #     # ###### #  # # #    # #   #   
+ #     # #    # #   ## #    # #    #  
+ ######  #    # #    # #####  #     # 
+                                      
+
+ ######                                              
+ #     # #    #  ####  # #    # ######  ####   ####  
+ #     # #    # #      # ##   # #      #      #      
+ ######  #    #  ####  # # #  # #####   ####   ####  
+ #     # #    #      # # #  # # #           #      # 
+ #     # #    # #    # # #   ## #      #    # #    # 
+ ######   ####   ####  # #    # ######  ####   ####  
+                                                     
+
+  #####                                                    
+ #     #  ####  #      #    # ##### #  ####  #    #  ####  
+ #       #    # #      #    #   #   # #    # ##   # #      
+  #####  #    # #      #    #   #   # #    # # #  #  ####  
+       # #    # #      #    #   #   # #    # #  # #      # 
+ #     # #    # #      #    #   #   # #    # #   ## #    # 
+  #####   ####  ######  ####    #   #  ####  #    #  ####  
+
+http://www.bandrsolutions.com
